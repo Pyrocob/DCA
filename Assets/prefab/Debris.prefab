@@ -149,4 +149,5 @@ MonoBehaviour:
   speed: 10
   explosions: {fileID: 100006, guid: a49596ebf788acd4ab1281bffea444b1, type: 3}
   fumer: {fileID: 100002, guid: 3b1513bcb86426b4795879be6a128ed7, type: 3}
+  debris1: {fileID: 7122149064057760281}
   rb: {fileID: 6577042508007115979}

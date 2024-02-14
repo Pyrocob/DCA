@@ -8,6 +8,7 @@ public class debris : MonoBehaviour
     private float time = 0.0f;
     public GameObject explosions;
     public GameObject fumer;
+    public GameObject debris1;
     public Rigidbody rb;
     void Start()
     {
@@ -29,15 +30,23 @@ public class debris : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
+        Vector3 movement = new Vector3(15, 10, 0);
         if (collision.gameObject.tag == "destroy")
         {
             Destroy(collision.gameObject);
+            //Instantiate(debris1, transform.position + movement, Quaternion.identity);
+            //Instantiate(debris1, transform.position + movement, Quaternion.identity);
+            //Instantiate(debris1, transform.position + movement, Quaternion.identity);
+            //Instantiate(debris1, transform.position + movement, Quaternion.identity);
         }
-        Vector3 movement = new Vector3(15, 10, 0);
         //Instantiate(explosions, transform.position, Quaternion.identity);
         if(collision.gameObject.tag == "Ground")
         {
             Instantiate(explosions, transform.position, transform.rotation);
+            //Instantiate(debris1, transform.position + movement, Quaternion.identity);
+            //Instantiate(debris1, transform.position + movement, Quaternion.identity);
+            //Instantiate(debris1, transform.position + movement, Quaternion.identity);
+            //Instantiate(debris1, transform.position + movement, Quaternion.identity);
             Destroy(gameObject);
         }
         //Destroy(gameObject);

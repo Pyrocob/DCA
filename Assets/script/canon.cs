@@ -19,12 +19,12 @@ public class canon : MonoBehaviour
         {
             var bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
             bullet.GetComponent<Rigidbody>().velocity = bulletSpawnPoint.up*bulletSpeed ;
-            //Instantiate(flash, bulletSpawnPoint.position, Quaternion.identity);
+            Instantiate(flash, bulletSpawnPoint.position, Quaternion.identity);
             _animator.SetBool("trigger", true);
         }
         if (Input.GetKey(KeyCode.Space))
         {
-            Instantiate(flash, bulletSpawnPoint.position, Quaternion.identity);
+            //Instantiate(flash, bulletSpawnPoint.position, Quaternion.identity);
 
             _animator.SetBool("trigger", true);
         }

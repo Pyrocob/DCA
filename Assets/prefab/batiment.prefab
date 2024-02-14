@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8680308598917492401}
   m_Layer: 7
   m_Name: batiment
-  m_TagString: Untagged
+  m_TagString: destroy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -25,7 +25,7 @@ public class charactermouvement : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Mouse1))
         {
-
+            
             aiming = 1;
         }
         else if (Input.GetKeyUp(KeyCode.Mouse1))
